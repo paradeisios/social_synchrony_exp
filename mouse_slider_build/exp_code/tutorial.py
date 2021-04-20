@@ -43,7 +43,7 @@ def tutorial(win,tutorial_movie,image):
     
     text.text = "In this experiment, you will .......\nPlease use the slider below to rate the synchrony as it will be shown now\nPress space to start the tutorial"
     text.draw()
-    win.flip
+    win.flip()
     
     event.waitKeys(keyList=["space"])
      
