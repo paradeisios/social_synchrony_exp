@@ -19,9 +19,9 @@ def social_sync_visual():
     text.draw()
     text2.draw()
     win.flip()
-    time.sleep(2)
+    time.sleep(5)
 
-    #### slide 1
+    #### slide 2
     text = visual.TextStim(win=win,text="סינכרון מבט מקסימלי הוא קשר עין ישיר בין הדמויות (למשל דמות א' מביטה ישירות בדמות ב', אשר גם מביטה ישירות בדמות א')",  
                            pos=(0,250),languageStyle= "RTL")  
 
@@ -50,7 +50,7 @@ def social_sync_visual():
     
     time.sleep(1)
 
-    #### slide 2
+    #### slide 3
     text = visual.TextStim(win=win,text="בשלב הבא, סינכרון מבט גבוה קיים כאשר שתי הדמויות מביטות באותו אובייקט בו זמנית",  
                            pos=(0,250),languageStyle= "RTL")  
     img1.image=os.path.join(os.getcwd(), "assets","pics", GAZE_IMG[2])
@@ -68,8 +68,44 @@ def social_sync_visual():
 
     time.sleep(1)
 
-    #### slide 3
+    #### slide 4
+    text = visual.TextStim(win=win,text="רמה נמוכה של סנכרון מבט היא כאשר דמות א' מביטה בדמות ב' ודמות ב' מסיטה את מבטה ונמנעת מיצירת קשר עין",  
+                           pos=(0,250),languageStyle= "RTL")  
+    img1.image=os.path.join(os.getcwd(), "assets","pics", GAZE_IMG[3])
+    img2.image=os.path.join(os.getcwd(), "assets","pics", GAZE_IMG[4])
+    img1.pos = (-300,0)
+    img2.pos = (300,0)
+    circle.pos = (0,-300)
 
+    for i in range(25):
+        circle.pos -= (7,0)
+        text.draw()
+        img1.draw()
+        img2.draw()
+        line.draw()
+        circle.draw()
+        win.flip()
+        core.wait(.05)
+    time.sleep(1)
+    
+    #### slide 5
+    text = visual.TextStim(win=win,text="רמה נמוכה של סנכרון מבט היא כאשר דמות א' מביטה בדמות ב' ודמות ב' מסיטה את מבטה ונמנעת מיצירת קשר עין",  
+                           pos=(0,250),languageStyle= "RTL")  
+    img1.image=os.path.join(os.getcwd(), "assets","pics", GAZE_IMG[5])
+
+    img1.pos = (0,0)
+    circle.pos = (0,-300)
+
+    for i in range(40):
+        circle.pos -= (7,0)
+        text.draw()
+        img1.draw()
+        line.draw()
+        circle.draw()
+        win.flip()
+        core.wait(.05)
+    
+    time.sleep(1)
     win.close()
 
     
