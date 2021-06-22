@@ -33,9 +33,9 @@ def specify_experiment():
     def ask_which_slider():
 
             root2 = Tk()
-            visual_tutorial = Button(root2,text="Visual Tutorial",padx=20,pady=20,command=social_sync_visual)
+            visual_tutorial = Button(root2,text="Visual Tutorial",padx=20,pady=20,command=social_sync_visual_tutorial)
             visual_experiment = Button(root2,text="Visual Synchrony Experiment",padx=20,pady=20,command=checker)
-            touch_tutorial = Button(root2,text="Touch Tutorial",padx=20,pady=20,command=checker)
+            touch_tutorial = Button(root2,text="Touch Tutorial",padx=20,pady=20,command=social_sync_touch_tutorial)
             touch_experiment = Button(root2,text="Touch Synchrony Experiment",padx=20,pady=20,command=checker)
             visual_tutorial.grid(row=0,column=0)
             visual_experiment.grid(row=0,column=1)
