@@ -1,6 +1,8 @@
 from psychopy import gui
 from tkinter import *
 from tutorials import *
+from experiments import *
+
 
 def demographics():
 
@@ -25,7 +27,7 @@ def demographics():
 def checker():
     pass
 
-def specify_experiment():
+def specify_experiment(demographics_data):
 
     root = Tk()
     root.title("Social Synchrony Exp v1.0")
@@ -34,7 +36,8 @@ def specify_experiment():
 
             root2 = Tk()
             visual_tutorial = Button(root2,text="Visual Tutorial",padx=20,pady=20,command=social_sync_visual_tutorial)
-            visual_experiment = Button(root2,text="Visual Synchrony Experiment",padx=20,pady=20,command=checker)
+            visual_experiment = Button(root2,text="Visual Synchrony Experiment",padx=20,pady=20,
+                                       command=lambda: social_sync_visual_experiment(demographics_data))
             touch_tutorial = Button(root2,text="Touch Tutorial",padx=20,pady=20,command=social_sync_touch_tutorial)
             touch_experiment = Button(root2,text="Touch Synchrony Experiment",padx=20,pady=20,command=checker)
             visual_tutorial.grid(row=0,column=0)

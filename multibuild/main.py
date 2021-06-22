@@ -4,4 +4,4 @@ from routines import *
 
 
 demographics_data = demographics()
-specify_experiment()
+specify_experiment(demographics_data)
