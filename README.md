@@ -15,3 +15,14 @@ This is a temporal repository for the social synchrony experiment tests. Please 
 ## To Do
 Add the arousal / emotion axis in the second version 
 Add a quit button to exit the movie at any times
+
+Video selection (for the pilot phase – 1 video)
+Coding selection (gaze/touch/valence arousal/identification/general sync)
+Subject – entering dmographics
+Instructions
+Rating
+Do you want to continue? Y/N
+If Y – back to coding selection
+Instructions
+Rating
+…
