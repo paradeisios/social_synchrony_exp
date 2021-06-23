@@ -4,13 +4,13 @@ This is a temporal repository for the social synchrony experiment tests. Please 
 
 ## Changelog
 
-- 22/06/2021 
+22/06/2021 
 
-Added gui in the multibuild version
+-Added gui in the multibuild version
 
-Added tutotorials for touch and visual soc sync
+-Added tutotorials for touch and visual soc sync
 
-Added experiment for visual soc sync
+-Added experiment for visual soc sync
 
 ## To Do
 Add the arousal / emotion axis in the second version 
