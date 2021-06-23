@@ -1,5 +1,5 @@
 from psychopy import core,event,visual
-from constants import *
+from utils.constants import *
 import time
 import os
 

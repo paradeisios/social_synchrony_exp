@@ -1,8 +1,8 @@
 from psychopy import visual,core,logging,constants,event
 import numpy as np
 import sys,os
-from constants import *
-import datetime
+from utils.constants import *
+import random, string
 def social_sync_visual_experiment(demographics_data):
 
     log = ""
@@ -132,8 +132,12 @@ def social_sync_visual_experiment(demographics_data):
     movie.stop()
     win.close()
 
-    with open("_movie_output.txt","w") as logger:
+    random_ascii = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(6))
+    fname = os.path.join(os.getcwd(),"output",random_ascii+"_movie_output.txt")
+
+    with open(fname,"w") as logger:
         logger.write(log)
 
+    os.path.join(os.getcwd(), "output","pics", GAZE_IMG[0])
 def grid_experiment():
     pass

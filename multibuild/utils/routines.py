@@ -1,7 +1,7 @@
 from psychopy import gui
 from tkinter import *
-from tutorials import *
-from experiments import *
+from utils.tutorials import *
+from utils.experiments import *
 
 
 def demographics():

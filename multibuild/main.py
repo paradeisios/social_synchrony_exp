@@ -1,6 +1,6 @@
 from psychopy import visual,event,core
 from tkinter import *
-from routines import *
+from utils.routines import *
 
 
 demographics_data = demographics()
