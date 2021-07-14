@@ -28,7 +28,7 @@ def specify_experiment_phase(movie_fname,demographics_data):
 
     gaze_exp = Button(root,text="Gaze Experiment",width=50,height=2,command = lambda: sync_experiment(demographics_data,movie_fname))
     touch_exp = Button(root, text="Touch Experiment",width=50,height=2, command=lambda: sync_experiment(demographics_data,movie_fname))
-    arousal_exp = Button(root, text="Valence/Arousal Experiment",width=50,height=2,command=lambda: sync_experiment(demographics_data,movie_fname))
+    arousal_exp = Button(root, text="Valence/Arousal Experiment",width=50,height=2,command=lambda: arousal_experiment(demographics_data,movie_fname))
    
     gaze_button.grid(row=0,column=0)
     touch_button.grid(row=1,column=0)

@@ -133,16 +133,16 @@ def arousal_experiment(demographics_data,movie_fname):
     win.flip()
 
     arousal_grid = os.path.join(os.getcwd(), "assets","pics", AROUSAL)
-    pic = visual.ImageStim(win=win,image= arousal_grid,size=(500,500),pos=(-360,0))
-    mov = visual.MovieStim3(win=win,filename=movie_fname,size=(500,400),pos=(360,0))
+    pic = visual.ImageStim(win=win,image= arousal_grid,size=(700,700),pos=(-400,0))
+    mov = visual.MovieStim3(win=win,filename=movie_fname,size=(800,600),pos=(450,0))
     pointer = visual.Circle(win=win,pos=(0,0),units="pix",radius=10,fillColor=[1, -1, -1],edges=128,opacity=.8)
 
     mouse = event.Mouse(win=win,visible=True)
 
     start_image = os.path.join(os.getcwd(), "assets","pics", BUTTONS[0])
     stop_image =  os.path.join(os.getcwd(), "assets","pics", BUTTONS[1])
-    start_button = visual.ImageStim(win=win,image=start_image,pos=(280,-350),size=(70,70))
-    stop_button  = visual.ImageStim(win=win,image=stop_image,pos=(450,-350),size=(70,70))
+    start_button = visual.ImageStim(win=win,image=start_image,pos=(330,-400),size=(70,70))
+    stop_button  = visual.ImageStim(win=win,image=stop_image,pos=(480,-400),size=(70,70))
 
     text.text="Move the slider by moving the mouse\nPress space to begin\nPress q to exit the experiment"
     text.draw()
