@@ -29,6 +29,7 @@ def tutorial(root,exp=""):
     
     
     win.close()
+    root.quit()
 
 
 
