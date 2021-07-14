@@ -20,11 +20,11 @@ def specify_experiment_phase(movie_fname,demographics_data):
     root = Tk()
     root.title("Social Synchrony Exp v1.1")
 
-    gaze_button = Button(root,text="Gaze Synchrony",width=50,height=2,command=lambda: tutorial(root,"gaze"))
-    touch_button = Button(root, text="Touch Synchrony ",width=50,height=2,command=lambda: tutorial(root,"touch"))
-    arousal_button = Button(root, text="Valence/Arousal",width=50,height=2,command=lambda: tutorial(root,"valance"))
-    id_button =  Button(root,text="Identification",width=50,height=2,command=lambda: tutorial(root,"id"))
-    general_sync_button = Button(root,text="General Synchrony Button",width=50,height=2,command=lambda: tutorial(root,"general"))
+    gaze_button = Button(root,text="Gaze Synchrony",width=50,height=2,command=lambda: tutorial("gaze"))
+    touch_button = Button(root, text="Touch Synchrony ",width=50,height=2,command=lambda: tutorial("touch"))
+    arousal_button = Button(root, text="Valence/Arousal",width=50,height=2,command=lambda: tutorial("valance"))
+    id_button =  Button(root,text="Identification",width=50,height=2,command=lambda: tutorial("id"))
+    general_sync_button = Button(root,text="General Synchrony Button",width=50,height=2,command=lambda: tutorial("general"))
 
     gaze_exp = Button(root,text="Gaze Experiment",width=50,height=2,command = lambda: sync_experiment(demographics_data,movie_fname))
     touch_exp = Button(root, text="Touch Experiment",width=50,height=2, command=lambda: sync_experiment(demographics_data,movie_fname))
