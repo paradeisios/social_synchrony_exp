@@ -5,7 +5,7 @@ import time
 
 
 
-def tutorial_loop(exp= ""):
+def tutorial(exp=""):
 
     win = visual.Window(size=(WIDTH,HEIGHT),units="pix",fullscr=False,color=(-1,-1,-1))
     
@@ -29,6 +29,6 @@ def tutorial_loop(exp= ""):
     
     
     win.close()
-    core.quit()
+
 
 
