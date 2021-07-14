@@ -5,7 +5,7 @@ import time
 
 
 
-def tutorial(exp=""):
+def tutorial(root,exp=""):
 
     win = visual.Window(size=(WIDTH,HEIGHT),units="pix",fullscr=False,color=(-1,-1,-1))
     
