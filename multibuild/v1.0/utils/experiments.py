@@ -3,6 +3,7 @@ import numpy as np
 import sys,os
 from utils.constants import *
 import random, string
+
 def social_sync_visual_experiment(demographics_data):
 
     log = ""

@@ -2,6 +2,7 @@ from tkinter import *
 from tkinter import filedialog
 from psychopy import gui
 from utils.tutorials import *
+from utils.experiments import *
 
 
 
@@ -14,7 +15,7 @@ def select_movie():
 
 
 
-def specify_experiment_phase():
+def specify_experiment_phase(movie_fname,demographics_data):
     
     root = Tk()
     root.title("Social Synchrony Exp v1.1")
@@ -25,12 +26,20 @@ def specify_experiment_phase():
     id_button =  Button(root,text="Identification",width=50,height=2,command=lambda: tutorial(root,"id"))
     general_sync_button = Button(root,text="General Synchrony Button",width=50,height=2,command=lambda: tutorial(root,"general"))
 
+    gaze_exp = Button(root,text="Gaze Experiment",width=50,height=2,command = lambda: sync_experiment(demographics_data,movie_fname))
+    touch_exp = Button(root, text="Touch Experiment",width=50,height=2, command=lambda: sync_experiment(demographics_data,movie_fname))
+    arousal_exp = Button(root, text="Valence/Arousal Experiment",width=50,height=2,command=lambda: tutorial(root,"valance"))
+   
     gaze_button.grid(row=0,column=0)
     touch_button.grid(row=1,column=0)
     arousal_button.grid(row=2,column=0)
     id_button.grid(row=3,column=0)
     general_sync_button.grid(row=4,column=0)
 
+    gaze_exp.grid(row=5,column=0)
+    touch_exp.grid(row=6,column=0)
+    arousal_exp.grid(row=7,column=0)
+    
     root.mainloop()
  
  
@@ -55,14 +64,5 @@ def demographics():
     
     return log_data
 
-
-def redo_encoding():
-    
-    answer = input("Do you want to repeat the tutorial (y/n) ?")
-
-    if answer.lower() == "y":
-        return True
-    else:
-        return False
 
         
