@@ -32,6 +32,8 @@ def specify_experiment_phase():
     general_sync_button.grid(row=4,column=0)
 
     root.mainloop()
+ 
+ 
 
 def demographics():
 
@@ -52,3 +54,15 @@ def demographics():
         print('user cancelled')
     
     return log_data
+
+
+def redo_encoding():
+    
+    answer = input("Do you want to repeat the tutorial (y/n) ?")
+
+    if answer.lower() == "y":
+        return True
+    else:
+        return False
+
+        

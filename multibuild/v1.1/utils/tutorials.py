@@ -1,5 +1,6 @@
 from psychopy import visual,event,core
 from utils.constants import *
+from utils.routines import *
 import os
 import time
 
@@ -30,6 +31,7 @@ def tutorial(root,exp=""):
     
     win.close()
     root.quit()
-
+ 
+    
 
 
