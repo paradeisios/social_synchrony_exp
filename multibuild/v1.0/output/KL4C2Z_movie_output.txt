@@ -1,0 +1,9 @@
+Name,
+Age,
+Gender,M
+Seen,Y
+Birth,
+Exp_with_coding,Y
+Education,Highschool
+-0.042,2.0
+-0.042,Experiment ended before movie end
