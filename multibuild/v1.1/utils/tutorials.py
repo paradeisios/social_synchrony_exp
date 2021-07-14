@@ -8,7 +8,7 @@ import time
 
 def tutorial(root,exp=""):
 
-    win = visual.Window(size=(WIDTH,HEIGHT),units="pix",fullscr=False,color=(-1,-1,-1))
+    win = visual.Window(size=(WIDTH,HEIGHT),units="pix",color=(-1,-1,-1))
     
     work_folder = os.path.join(os.getcwd(),"assets","pics",exp)
     pictures = [os.path.join(work_folder,file) for file in os.listdir(work_folder)]
