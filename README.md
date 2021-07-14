@@ -12,17 +12,19 @@ This is a temporal repository for the social synchrony experiment tests. Please 
 
 -Added experiment for visual soc sync
 
-## To Do
-Add the arousal / emotion axis in the second version 
-Add a quit button to exit the movie at any times
+15/07/2021 
 
-Video selection (for the pilot phase – 1 video)
-Coding selection (gaze/touch/valence arousal/identification/general sync)
-Subject – entering dmographics
-Instructions
-Rating
-Do you want to continue? Y/N
-If Y – back to coding selection
-Instructions
-Rating
-…
+-Finished arousal experiment
+
+-Finished tutorials
+
+-Fixed gui, demographics
+ 
+## To Do
+
+-Add actual buttons
+
+-Fix loop with tutorials and experiments
+
+-Separate sync output in gaze/touch specific folders 
+
