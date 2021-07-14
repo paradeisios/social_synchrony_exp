@@ -205,7 +205,7 @@ def arousal_experiment(demographics_data,movie_fname):
     win.close()
 
     random_ascii = ''.join(random.choice(string.ascii_uppercase + string.digits) for _ in range(6))
-    fname = os.path.join(os.getcwd(),"output","sync",random_ascii+"_movie_output.txt")
+    fname = os.path.join(os.getcwd(),"output","arousal",random_ascii+"_movie_output.txt")
     print(fname)
 
     with open(fname,"w") as logger:
