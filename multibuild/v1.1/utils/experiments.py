@@ -164,14 +164,15 @@ def arousal_experiment(demographics_data,movie_fname):
 
         pointer.pos = mouse.getPos()
         
-        if pointer.pos[0] < -610:
-            pointer.pos[0] = -610
-        if pointer.pos[0] > -105:
-            pointer.pos[0] = -105
-        if pointer.pos[1] > 250:
-            pointer.pos[1] = 250
-        if pointer.pos[1] < -250:
-            pointer.pos[1] = -250
+        print(pointer.pos)
+        if pointer.pos[0] < -750:
+            pointer.pos[0] = -750
+        if pointer.pos[0] > -50:
+            pointer.pos[0] = -50
+        if pointer.pos[1] > 350:
+            pointer.pos[1] = 350
+        if pointer.pos[1] < -350:
+            pointer.pos[1] = -350
         
         start_button.draw()
         stop_button.draw()
